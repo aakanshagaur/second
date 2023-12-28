@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/gif" />
+
+  <title>Govindam- The Complete Home Solution</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap' %}"
+    rel="stylesheet" />
+
+  <!-- lightbox Gallery-->
+  <link rel="stylesheet" href="{% static 'css/ekko-lightbox.css' %}" />
+
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <!-- <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="/">
+          <span>
+            Govindam
+          </span>
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/gallery/">Gallery</a>
+                <a href="/service/">Service</a>
+                <a href="/blog/">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header> -->
+  <!-- end header section -->
+
+
+
+  <!-- header section strats -->
+  <header class="header_section innerpage_header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="/">
+          <span>
+            Govindam
+          </span>
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/gallery/">Gallery</a>
+                <a href="/service/">Service</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact/">Contact US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- contact section -->
+  <section class="contact_section  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-6 ">
+          <div class="form_container">
+            <div class="heading_container ">
+              <h2>
+                Contact Us
+              </h2>
+              <p>{{msg}}</p>
+            </div>
+            <form method="post" action="/AfterContact/">
+              {% csrf_token %}
+              <div>
+                <input type="text" placeholder="Your Name" name="name"/>
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" name="phone"/>
+              </div>
+              <div>
+                <input type="email" placeholder="Email" name="email"/>
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" name="message"/>
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-6">
+          <div class="subscribe-box">
+            <h3>
+              Be the Part of Our Work
+            </h3>
+            <p>
+              Think you can't afford beautiful interior design? Think again <br>
+              The attractive, beautiful, eye catchy interior in affordable price. <br>
+              <b>We Create Dreams, Not Just Designs.</b>
+            </p>
+            <!-- <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4>
+              <a href="/" class="navbar-brand m-0 p-0">
+                <span>
+                  Govindam
+                </span>
+              </a>
+            </h4>
+            <p class="mb-0">
+              Your space should not only look amazing, but it should be a reflection of your personality and style, and
+              it should function in a way that works with how you live your life.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="col-md-6 col-lg-3">
+        <div class="info_detail">
+          <h4>
+            Company
+          </h4>
+          <p class="mb-0">
+            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+          </p>
+        </div>
+      </div> -->
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Contact Us
+          </h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +91 8387999003
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                kishansharma587@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Follow Us
+          </h4>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="{% static 'https://html.design/' %}">Aakansha Gaur</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- lightbox Gallery-->
+  <script src="{% static 'js/ekko-lightbox.min.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js' %}"></script>
+
+
+
+
+
+</body>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        {% load static %}
+        {% block footer %}
+    </head>
+    <body>
+        <!-- footer section start -->
+      <div class="footer_section layout_padding">
+        <div class="container">
+           <div class="footer_logo"><a href="/"><img src="{% static 'images/footer-logo.png' %}"></a></div>
+           <div class="footer_menu">
+              <ul>
+                 <li><a href="/">Home</a></li>
+                 <li><a href="/about/">About</a></li>
+                 <li><a href="/blog/">Blog</a></li>
+                 <li><a href="/features/">Features</a></li>
+                 <li><a href="/contact/">contact us</a></li>
+              </ul>
+           </div>
+           <div class="contact_menu">
+              <ul>
+                 <li><a href="#"><img src="{% static 'images/call-icon.png' %}"></a></li>
+                 <li><a href="#">Call : +01 1234567890</a></li>
+                 <li><a href="/blog/"><img src="{% static 'images/mail-icon.png' %}"></a></li>
+                 <li><a href="/features/">demo@gmail.com</a></li>
+              </ul>
+           </div>
+        </div>
+     </div>
+     <!-- footer section end -->
+     <!-- copyright section start -->
+     <div class="copyright_section">
+        <div class="container">
+           <p class="copyright_text">Copyright 2020 All Right Reserved By.<a href="{% static 'https://html.design' %}"> Free  html Templates</a></p>
+        </div>
+     </div>
+     <!-- copyright section end -->
+    </body>
+    {% endblock %}
+</html>

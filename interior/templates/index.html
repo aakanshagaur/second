@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/gif" />
+
+  <title>Govindam- The Complete Home Solution</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap' %}" rel="stylesheet" />
+
+  <!-- lightbox Gallery-->
+  <link rel="stylesheet" href="{% static 'css/ekko-lightbox.css' %}" />
+
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="/">
+          <span>
+            Govindam
+          </span>
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/gallery/">Gallery</a>
+                <a href="/service/">Service</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact/">Contact US</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- slider section -->
+  <section class="slider_section position-relative">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="{% static 'images/slider-bg.jpg' %}" class="" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="{% static 'images/slider-bg.jpg' %}" class="" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="{% static 'images/slider-bg.jpg' %}" class="" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn_box">
+        <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="detail-box">
+      <div class="col-md-8 col-lg-6 mx-auto">
+        <div class="inner_detail-box">
+          <h1>
+            The Complete Home<br>
+            Solution
+          </h1>
+          <p>
+            Your home should tell the story of who you are, and be a collection of what you love.
+          </p>
+          <div>
+            <a href="/contact/" class="slider-link">
+              CONTACT US
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end slider section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              We converts your home into your Dream Home. By Decorating your Home by best quality furnitures and materials.  Your space should not only look amazing, but it should be a reflection of your personality and style, and it should function in a way that works with how you live your life. It might sound impossible, and that’s because incredible interior design does not happen by chance. Great spaces are ...
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- gallery section -->
+
+  <div class="gallery_section layout_padding2">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2>
+          Gallery
+        </h2>
+      </div>
+      <div class="row">
+        <div class=" col-sm-8 col-md-6 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/g1.jpg' %}" alt="">
+            <a href="{% static 'images/g1.jpg' %}" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/g2.jpg' %}" alt="">
+            <a href="{% static 'images/g2.jpg' %}" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/g3.jpg' %}" alt="">
+            <a href="{% static 'images/g3.jpg' %}" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/g4.jpg' %}" alt="">
+            <a href="{% static 'images/g4.jpg' %}" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/g5.jpg' %}" alt="">
+            <a href="{% static 'images/g5.jpg' %}" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-6 px-0">
+          <div class="img-box">
+            <img src="{% static 'images/g6.jpg' %}" alt="">
+            <a href="{% static 'images/g6.jpg' %}" data-toggle="lightbox" data-gallery="gallery">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <!-- <a href="">
+          View All
+        </a> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- end gallery section -->
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Services
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/s1.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Residential Decoration
+              </h5>
+              <p>
+                Moving into a new home can be one of life’s great joys, but it can also be a time of uncertainty, especially when it comes to decorating.
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/s2.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Commercial Decoration
+              </h5>
+              <p>
+                modern and contemporary design is quite popular when creating the interiors of corporate lobbies. However, design can also take inspiration from past trends, with traditional decor.
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mx-auto">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/s3.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Office Decoration
+              </h5>
+              <p>
+                Textured walls when coupled with ... Art on textured walls will never cease to be aesthetic which works in favour of the office interior design
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- end service section -->
+
+
+
+  <!-- blog section -->
+
+  <section class="blog_section ">
+    <div class="container-fluid">
+      <div class="heading_container">
+        <h2>
+          Latest Blog
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 ">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/b1.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Velit tempora molestias quae
+              </h5>
+              <p>
+                Omnis itaque ducimus excepturi dignissimos voluptatibus sequi nisi ut ullam, perspiciatis doloribus! Cum itaque sint quibusdam aut vel. A esse labore.
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/b2.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Repudiandae voluptatum quaerat
+              </h5>
+              <p>
+                Totam non minus suscipit, exercitationem deserunt doloribus provident dolor quos nulla impedit, perspiciatis excepturi eius hic vero harum deleniti.
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end blog section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Siaalya
+                      </h6>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable cIt is a long established fact
+                      that a reader will be distracted by the readable c
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Siaalya
+                      </h6>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable cIt is a long established fact
+                      that a reader will be distracted by the readable c
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-11 col-lg-10 mx-auto">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="{% static 'images/client.jpg' %}" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <div class="name">
+                      <h6>
+                        Siaalya
+                      </h6>
+                    </div>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable cIt is a long established fact
+                      that a reader will be distracted by the readable c
+                    </p>
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+  <section class="contact_section  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-6 ">
+          <div class="form_container">
+            <div class="heading_container ">
+              <h2>
+                Contact Us
+              </h2>
+              <p>
+                {{msg}}
+              </p>
+            </div>
+            <form method="post" action="/AfterContact/">
+              {% csrf_token %}
+              <div>
+                <input type="text" placeholder="Your Name" name="name"/>
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" name="phone"/>
+              </div>
+              <div>
+                <input type="email" placeholder="Email" name="email"/>
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" name="message"/>
+              </div>
+              <div class="btn_box">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-6">
+          <div class="subscribe-box">
+            <h3>
+                Be the Part of Our Work
+            </h3>
+            <p>
+              Think you can't afford beautiful interior design? Think again <br>
+              The attractive, beautiful, eye catchy interior in affordable price. <br>
+              <b>We Create Dreams, Not Just Designs.</b>
+            </p>
+            <!-- <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4>
+              <a href="/" class="navbar-brand m-0 p-0">
+                <span>
+                  Govindam
+                </span>
+              </a>
+            </h4>
+            <p class="mb-0">
+              Your space should not only look amazing, but it should be a reflection of your personality and style, and it should function in a way that works with how you live your life.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="col-md-6 col-lg-3">
+          <div class="info_detail">
+            <h4>
+              Company
+            </h4>
+            <p class="mb-0">
+              when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+            </p>
+          </div>
+        </div> -->
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Contact Us
+          </h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +92 8387999003
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                kishansharma587@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Follow Us
+          </h4>
+          <div class="social_box">
+            <a href="www.facebook.com">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="{% static 'https://html.design/' %}">Aakansha Gaur</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- lightbox Gallery-->
+  <script src="{% static 'js/ekko-lightbox.min.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+
+</html>
